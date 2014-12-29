@@ -1,7 +1,7 @@
 (ns i-am-a-horse-in-the-land-of-booleans
   (:refer-clojure :exclude [boolean]))
 
-(defn boolean [x](if (or (= x nil) (= x false)) false true ))
+(defn boolean [x](if (or (= x nil) (= x false)) false true))
 
 (defn abs [x]
   ":(")
@@ -13,7 +13,7 @@
   ":(")
 
 (defn teen? [age]
-  ":(")
+  (if (and (< age 20 ) (> age 12)) true false))
 
 (defn not-teen? [age]
   ":(")
