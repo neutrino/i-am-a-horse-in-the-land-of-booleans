@@ -8,8 +8,14 @@
 ; i.e. if n<0, the value of (abs n) is −n, and otherwise n.
 (defn abs [x] (if (< x 0 ) (- x) x ))
 
-(defn divides? [divisor n]
-  ":(")
+
+; Exercise 4
+; Write the function (divides? divisor n), which returns true if
+; divisor divides n and false otherwise.
+; (mod num div) returns 0 if div divides num exactly:
+; (mod 10 5) ;=> 0
+; (mod 3 2)  ;=> 1
+(defn divides? [divisor n](if (= 0 (mod n divisor)) true false ))
 
 (defn fizzbuzz [n]
   ":(")
