@@ -38,11 +38,19 @@
   )
 )
 
+
 (defn teen? [age]
   (if (and (< age 20 ) (> age 12)) true false))
 
-(defn not-teen? [age]
-  ":(")
+; Exercise 7
+; Write the function (not-teen? age), which returns true when teen? returns false and false otherwise.
+; (not-teen? 13) ;=> false
+; (not-teen? 25) ;=> true
+; (not-teen? 12) ;=> true
+; (not-teen? 19) ;=> false
+; (not-teen? 20) ;=> true
+
+(defn not-teen? [age](not (teen? age)))
 
 
 ; Exercise 6
