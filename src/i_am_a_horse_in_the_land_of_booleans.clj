@@ -3,8 +3,10 @@
 
 (defn boolean [x](if (or (= x nil) (= x false)) false true))
 
-(defn abs [x]
-  ":(")
+; Exercise 3
+; Write the function (abs n), which returns the absolute value of n,
+; i.e. if n<0, the value of (abs n) is −n, and otherwise n.
+(defn abs [x] (if (< x 0 ) (- x) x ))
 
 (defn divides? [divisor n]
   ":(")
